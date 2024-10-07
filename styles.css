@@ -1,0 +1,729 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*NAV STYLES IN NO SPECIFIC ORDER*/
+
+header{
+    background-color: rgb(241, 214, 179);
+    position: fixed;
+    max-width: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 35rem;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.material-symbols-outlined {
+    padding-top: 23px;
+    color:  rgb(7, 71, 118);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.bx{
+    padding-top: 25px;
+    color: rgb(7, 71, 118);
+}
+.icon{
+    display: flex;
+    gap: 1rem;
+    margin-left: 70px;
+
+    align-items: center;
+}
+.icon h4 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    padding-top: 25px; 
+}
+.icon h4 a{
+    padding-top: 6px;
+    color: rgb(72, 72, 120);
+    text-decoration: none;
+}
+.nav-list{
+    display: flex;
+    gap: 1rem;
+    padding-left: 110px;
+}
+.nav-list ul{
+    padding-top: 25px;
+    display: flex;
+    gap: 1rem;
+}
+.nav-list ul li{
+    list-style-type: none;
+}
+.nav-list ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    color: rgb(72, 72, 120);
+    text-decoration: none;
+}
+.nav-list a{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    padding-top: 25px;
+    text-decoration: none;
+    color: rgb(72, 72, 120);
+}
+#home{
+    color: rgb(145, 87, 11);
+}
+#home:hover{
+    color: rgb(72, 72, 120);
+    
+}
+.nav-list button{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top: 13px;
+    color: white;
+    padding: 18px;
+    background-color: rgb(75, 119, 209);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.material-symbols-outlined.menu-icon {
+    font-size: 2rem;
+}
+
+/* Responsive styles FOR NAVBAR */
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(241, 214, 179);
+        padding: 1rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active + .nav-list {
+        display: flex;
+    }
+
+    .nav-list button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*STYLES FOR SECOND WRAPPER*/
+.second-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 5px;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-color: rgb(241, 214, 179);
+}
+.second-wrapper-first-content{
+    margin-left: 300px;
+}
+.second-wrapper-first-content h2{
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-family: "Noto Sans JP", sans-serif;
+    color:  rgb(7, 71, 118);
+    font-size: 120px;
+    font-style: normal;
+}
+.second-wrapper-first-content h4{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 30px;
+    color:  rgb(72, 72, 120);
+}
+.second-wrapper-first-content button{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top: 13px;
+    color: white;
+    padding: 8px 40px 8px 40px;
+    background-color: rgb(75, 119, 209);
+    border: none;
+    cursor: pointer;
+}
+.second-wrapper-first-content button:hover{
+    filter: blur(0.5px);
+    background-color: rgb(91, 122, 184);
+}
+/*
+.second-wrapper-second-content{
+
+}
+*/
+.second-wrapper-second-content .circle{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: rgb(198, 123, 42);
+}
+
+.second-wrapper-second-content .circle img{
+    width: 360px;
+    display: block;
+    padding-top: 80px;
+    margin-left: 40px;
+}
+
+/*THIRD WRAPPER*/
+.third-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 150px;
+}
+.third-wrapper-texts{
+    margin-top: 90px;
+}
+.third-wrapper-texts h2{
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-family: "Noto Sans JP", sans-serif;
+    color:  rgb(7, 71, 118);
+    font-size: 45px;
+    margin-bottom: 22px;
+    font-style: normal;
+}
+.third-wrapper-texts p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 16px;
+    width: 350px;
+    margin-bottom: 22px;
+    color:  rgb(72, 72, 120);
+}
+.third-wrapper-texts button{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top: 13px;
+    color: white;
+    padding: 8px 40px 8px 40px;
+    background-color: rgb(75, 119, 209);
+    border: none;
+    cursor: pointer;
+}
+.third-wrapper-texts button:hover{
+    filter: blur(0.5px);
+    background-color: rgb(91, 122, 184);
+}
+
+/*FOURTH WRAPPER*/
+.fourth-wrapper{
+    padding-bottom: 300px;
+}
+.fourth-wrapper-top{
+    margin-left: 630px;
+    padding-bottom: 100px;
+}
+.fourth-wrapper-top h3{
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-family: "Noto Sans JP", sans-serif;
+    color:  rgb(7, 71, 118);
+    font-size: 45px;
+    font-style: normal;
+}
+.fourth-wrapper-bottom{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    margin-left: 300px;
+}
+.fourth-wrapper-bottom-a
+
+#dog{
+    width: 150px;
+}
+
+.fourth-wrapper-bottom-a .circle{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: rgb(219, 227, 70);
+    margin-bottom: 50px;
+}
+
+.fourth-wrapper-bottom-a h4 a{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color:  rgb(7, 71, 118); 
+    text-decoration: none; 
+}
+.fourth-wrapper-bottom-a h4 a:hover{
+    filter: blur(0.5px);
+    text-decoration: none;
+}
+.fourth-wrapper-bottom-a p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 12px;
+    color:  rgb(72, 72, 120);
+}
+.fourth-wrapper-bottom-a button{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top: 13px;
+    color: white;
+    padding: 8px 40px 8px 40px;
+    background-color: rgb(75, 119, 209);
+    border: none;
+    cursor: pointer;
+}
+.fourth-wrapper-bottom-a button:hover{
+    filter: blur(0.5px);
+    background-color: rgb(91, 122, 184);
+}
+
+.fourth-wrapper-bottom-b
+
+#dogg{
+    width: 150px;
+}
+
+.fourth-wrapper-bottom-b .circle{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: rgb(169, 211, 236);
+    margin-bottom: 50px;
+}
+
+.fourth-wrapper-bottom-b h4 a{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color:  rgb(7, 71, 118); 
+    text-decoration: none; 
+}
+.fourth-wrapper-bottom-b h4 a:hover{
+    filter: blur(0.5px);
+    text-decoration: none;
+}
+.fourth-wrapper-bottom-b p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 12px;
+    color:  rgb(72, 72, 120);
+}
+.fourth-wrapper-bottom-b button{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top: 13px;
+    color: white;
+    padding: 8px 40px 8px 40px;
+    background-color: rgb(75, 119, 209);
+    border: none;
+    cursor: pointer;
+}
+.fourth-wrapper-bottom-b button:hover{
+    filter: blur(0.5px);
+    background-color: rgb(91, 122, 184);
+}
+
+
+.fourth-wrapper-bottom-c
+
+#doggg{
+    width: 150px;
+}
+
+.fourth-wrapper-bottom-c .circle{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: rgb(244, 158, 97);
+    margin-bottom: 50px;
+}
+
+.fourth-wrapper-bottom-c h4 a{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color:  rgb(7, 71, 118); 
+    text-decoration: none; 
+}
+.fourth-wrapper-bottom-c h4 a:hover{
+    filter: blur(0.5px);
+    text-decoration: none;
+}
+.fourth-wrapper-bottom-c p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 12px;
+    color:  rgb(72, 72, 120);
+}
+.fourth-wrapper-bottom-c button{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      margin-top: 13px;
+    color: white;
+    padding: 8px 40px 8px 40px;
+    background-color: rgb(75, 119, 209);
+    border: none;
+    cursor: pointer;
+}
+.fourth-wrapper-bottom-c button:hover{
+    filter: blur(0.5px);
+    background-color: rgb(91, 122, 184);
+}
+
+
+/*FIFTH WRAPPER*/
+.fifth-section{
+    display: inline;
+}
+.fifth-section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.fifth-section-header h2{
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-family: "Noto Sans JP", sans-serif;
+    color:  rgb(7, 71, 118);
+    font-size: 60px;
+    font-style: normal;
+    
+}
+.gallery-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 20px; /* space between the grid items */
+}
+.gallery img{
+    width: 400px;
+}
+
+
+/*STYLES FOR SIX SECTION*/
+.sixth-section{
+    display: inline;
+}
+.sixth-section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+    margin-top: 200px;
+}
+.sixth-section-header h3{
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-family: "Noto Sans JP", sans-serif;
+    color:  rgb(7, 71, 118);
+    font-size: 60px;
+    font-style: normal;
+}
+/*.sixth-section-bottom-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.sixth-section-bottom{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    padding-left: 180px;
+}
+
+.ddd{
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-family: "Noto Sans JP", sans-serif;
+    color:  rgb(7, 71, 118);
+    font-size: 25px;
+    margin-bottom: 22px;
+    font-style: normal; 
+}
+.testimonial{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 16px;
+    width: 230px;
+    margin-bottom: 22px;
+    color:  rgb(72, 72, 120);
+}
+.name{
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-family: "Noto Sans JP", sans-serif;
+    color:  rgb(7, 71, 118);
+    font-size: 15px;
+    margin-bottom: 22px;
+    font-style: normal;  
+}
+
+
+/*STYLES FOR SEVENTH SECTION*/
+.seventh-section{
+    min-height: 100%;
+    background-color: rgb(7, 71, 118);;
+}
+.seventh-section h3{
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-family: "Noto Sans JP", sans-serif;
+    color: white;
+    font-size: 100px;
+    font-style: normal;
+}/*
+.seventh-section-top{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}*/
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.xxx{
+    display: flex;
+    gap: 60px;
+}
+
+
+.first-name{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 19px; 
+    color: white;
+}
+#first-name{
+    width: 250px;
+    height: 70px;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    background-color: transparent; 
+}
+#first-name:focus{
+    outline: none;
+    background-color: transparent;
+}
+.last-name{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 19px; 
+    color: white;
+}
+#last-name{
+    width: 250px;
+    height: 70px;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    margin-bottom: 24px; 
+}
+#last-name:focus{
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+.email{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 19px; 
+    color: white;  
+}
+#email{
+    width: 250px;
+    height: 70px;
+    outline: none;
+    border: none;
+    color: white;
+    margin-bottom: 24px;
+    border-bottom: 1px solid white;
+    background-color: transparent; 
+}
+#email:focus{
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+.message{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 19px; 
+    color: white;   
+}
+#message{
+    width: 250px;
+    height: 70px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent; 
+}
+#message:focus{
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+#form-btn{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 19px; 
+    color: white;  
+    width: 220px;
+    height: 40px;
+    margin-top: 30px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#form-btn:hover{
+    background-color: white;
+    color: black;
+}
