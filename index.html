@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr Mark</title>
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
     <!--CSS LINK-->
     <link rel="stylesheet" href="./styles.css">
     <!--BOXICONS-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <!--FONT AWESOME ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!--GOOGLE ICONS FOR LOGO-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!--OPEN SANS FONT-->
@@ -43,7 +46,7 @@
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Members</a></li>
                 </ul>
-                <i class='bx bx-user-circle bx-sm' ></i>
+                <i class='bx bx-user-circle bx-sm'  id="bv" ></i>
                 <a href="#">Log In</a>
                 <button>CALL: 123-456-7890</button>
             </div>
@@ -64,7 +67,7 @@
     </section>
 
     <section class="third-wrapper">
-        <div>
+        <div class="third-wrapper-image">
             <img src="./Images/Screenshot 2024-10-06 at 12.27.27.png" alt="">
         </div>
         <div class="third-wrapper-texts">
@@ -83,6 +86,7 @@
             <div class="fourth-wrapper-bottom-a">
                 <div class="circle">
                     <img src="./Images/havanese-dog-puppy-maltese-dog-bichon-frise-golden-retriever-puppy-a02de356bf264957e2fd737931776a44 (1).png" alt="" id="dog">
+                    <div class="overlay-one"></div>
                 </div>
                 <h4><a href="#">Dental Care</a></h4>
                 <p>Use this area to describe one of your services.</p>
@@ -91,6 +95,7 @@
             <div class="fourth-wrapper-bottom-b">
                 <div class="circle">
                     <img src="./Images/maltese-dog-havanese-dog-bolognese-dog-little-lion-dog-coton-de-tulear-puppy-aa3a63d15c63f9a5eb830db967759966.png" alt="" id="dogg">
+                    <div class="overlay-two"></div>
                 </div>
                 <h4><a href="#">Check Up</a></h4>
                 <p>Use this area to describe one of your services.</p>
@@ -99,6 +104,7 @@
             <div class="fourth-wrapper-bottom-c">
                 <div class="circle">
                     <img src="./Images/goldendoodle-golden-retriever-labradoodle-poodle-puppy-doodles-f4843e51f620295f9388797733ac873f.png" alt="" id="doggg">
+                    <div class="overlay-three"></div>
                 </div>
                 <h4><a href="#">Grooming</a></h4>
                 <p>Use this area to describe one of your services.</p>
@@ -113,12 +119,54 @@
         </div>
         <div class="gallery-wrapper">
             <div class="gallery">
-                <img src="./Images/Screenshot 2024-10-06 at 14.12.33.png" alt="">
-                <img src="./Images/Screenshot 2024-10-06 at 14.12.42.png" alt="">
-                <img src="./Images/Screenshot 2024-10-06 at 14.12.51.png" alt="">
-                <img src="./Images/Screenshot 2024-10-06 at 14.13.00.png" alt="">
-                <img src="./Images/Screenshot 2024-10-06 at 14.13.10.png" alt="">
-                <img src="./Images/Screenshot 2024-10-06 at 14.13.22.png" alt="">
+                <div class="gallery-a">
+                    <img src="./Images/Screenshot 2024-10-06 at 14.12.33.png" alt="">
+                    <div class="gallery-overlay-a">
+                        <div class="heart" id="heart1">
+                            <i class="far fa-heart"></i>
+                        </div>                          
+                    </div>
+                </div>
+                <div class="gallery-b">
+                    <img src="./Images/Screenshot 2024-10-06 at 14.12.42.png" alt="">
+                    <div class="gallery-overlay-b">
+                        <div class="heart" id="heart2">
+                            <i class="far fa-heart"></i>
+                        </div> 
+                    </div>
+                </div>
+                <div class="gallery-c">
+                    <img src="./Images/Screenshot 2024-10-06 at 14.12.51.png" alt="">
+                    <div class="gallery-overlay-c">
+                        <div class="heart" id="heart3">
+                            <i class="far fa-heart"></i>
+                        </div> 
+                    </div>
+                </div>
+                <div class="gallery-d">
+                    <img src="./Images/Screenshot 2024-10-06 at 14.13.00.png" alt="">
+                    <div class="gallery-overlay-d">
+                        <div class="heart" id="heart4">
+                            <i class="far fa-heart"></i>
+                        </div> 
+                    </div>
+                </div>
+                <div class="gallery-e">
+                    <img src="./Images/Screenshot 2024-10-06 at 14.13.10.png" alt="">
+                    <div class="gallery-overlay-e">
+                        <div class="heart" id="heart5">
+                            <i class="far fa-heart"></i>
+                        </div> 
+                    </div>
+                </div>
+                <div class="gallery-f">
+                    <img src="./Images/Screenshot 2024-10-06 at 14.13.22.png" alt="">
+                    <div class="gallery-overlay-f">
+                        <div class="heart" id="heart">
+                            <i class="far fa-heart"></i>
+                        </div> 
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -148,16 +196,16 @@
         </div>
     </section>
 
-    <footer class="seventh-section">
+    <footer>
         <h3>Contact</h3>
         <div class="seventh-section-top"> 
             <div class="contact-info">
                 <div>
-                    <h4>Phone</h4>
+                    <h4 id="email">Phone</h4>
                     <p>123-456-7890</p>
                 </div>
                 <div>
-                    <h4>Email</h4>
+                    <h4 id="email">Email</h4>
                     <p><a href="#">info@mysite.com</a></p>
                 </div>
                 <div>
@@ -175,34 +223,48 @@
 
 
 
-
+        <div class="form-wrapper">
         <form action="javascript:void(0);" method="post" id="form" onsubmit="validateForm()">
-            <div class="xxx">
+            <div class="first-slide">
                 <div>
-                <label for="First Name" class="first-name">First Name*</label>
-                <br>
-                <input type="text" id="first-name" required>
+                    <label for="first-name" class="first-name">First Name*</label>
+                    <br>
+                    <input type="text" name="" id="first-name">
                 </div>
-
                 <div>
-                <label for="Last Name" class="last-name">Last Name*</label>
-                <br>
-                <input type="text" id="last-name" required>
+                    <label for="last-name" class="last-name">Last Name*</label>
+                    <br>
+                    <input type="text" name="" id="last-name">
                 </div>
             </div>
-            <div class="yyy">
-                <label for="Email" class="email">Email*</label>
+            <div class="second-slide">
+                <label for="email-two" class="email-two">Email*</label>
                 <br>
-                <input type="email" id="email" required>
+                <input type="email" name="" id="email-two">
             </div>
-
-            <div class="zzz">
-                <p class="message">Leave us a message</p>
-            <input type="text" id="message">
+            <div class="third-slide">
+                <label for="message" class="message">Message</label>
+                <br>
+                <input type="text" id="message">
             </div>
-            <br>
-            <button id="form-btn">Submit</button>
+            <div class="submit-wrapper">
+                <button class="submit">Submit</button>
+            </div>
         </form>
+        </div>
+        
+
+        <div class="seventh-section-bottom">
+            <img src="./Images/french-bulldog-the-puppy-training-handbook-how-to-raise-the-dog-of-your-dreams-australian-shepherd-french-bulldog-face-9fc65ff1c7814fe2408c577e4e06f238.png" alt="">
+            <i class='bx bxl-facebook bx-sm' ><a href=""></a></i>
+            <i class='bx bxl-twitter bx-sm' ></i>
+            <i class='bx bxl-youtube bx-sm' ></i>
+            <i class='bx bxl-linkedin bx-sm' ></i>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 by Josephine Jerome🤘🏻🛼🌸</p>
+        </div>
     </footer>
 
 <script src="./script.js"></script>
